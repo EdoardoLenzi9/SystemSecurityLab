@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SelectAppletTask Name="Select MyFirst" Type="Applet">
+   <AppletInstanceAid>31 32 33 34 32 36</AppletInstanceAid>
+  </SelectAppletTask>
+  <SendApduTask Name="Verify Pin (Modify PIN: 31 31 31 31)">
+   <Command>00 20 00 00 04 00 00 00 00 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="Modify">
+   <Command>00 D6 00 00 1F 4B 6F 68 6E FF 44 6F 65 FF 32 31 31 32 32 30 30 31 FF 31 36 32 31 31 32 30 31 53 78 78 78 FF 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="Read Data">
+   <Command>00 B6 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+ </Tasks>
+</Macro>

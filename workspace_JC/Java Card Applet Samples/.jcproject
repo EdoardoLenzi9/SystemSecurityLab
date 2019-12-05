@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JCProjectParameters>
+ <updateBuildPath>true</updateBuildPath>
+ <ProjectName>Java Card Applet Samples</ProjectName>
+ <ConverterVersion>jcdk 2.2.2</ConverterVersion>
+ <SimulationType>Convego Join / SmartCafe Expert 5.0</SimulationType>
+ <JCPackageParameters>
+  <Aid SpecificName="PackageAid">31 32 33 34 33 AA FF CA FE FF AA</Aid>
+  <JCConverterOptions>-debug -out CAP EXP</JCConverterOptions>
+  <PackageName>com.gieseckedevrient.applets.des</PackageName>
+  <PackageVersion>1.0</PackageVersion>
+  <JCAppletParameters>
+   <Aid SpecificName="AppletClassAid">31 32 33 34 33 36</Aid>
+   <AppletName>SecureApplet</AppletName>
+  </JCAppletParameters>
+ </JCPackageParameters>
+ <JCPackageParameters>
+  <Aid SpecificName="PackageAid">31 32 33 34 32 AA FF CA FE FF AA</Aid>
+  <JCConverterOptions>-debug -out CAP EXP</JCConverterOptions>
+  <PackageName>com.gieseckedevrient.applets.myfirst</PackageName>
+  <PackageVersion>1.0</PackageVersion>
+  <JCAppletParameters>
+   <Aid SpecificName="AppletClassAid">31 32 33 34 32 36</Aid>
+   <AppletName>MyFirstApplet</AppletName>
+  </JCAppletParameters>
+ </JCPackageParameters>
+</JCProjectParameters>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="var" path="JCDT_HOME/api/OP_201.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/cc_views/liskt_JCS_Maint/JCS1_CODE/JCDT/api/OP_201.zip!/OP_201"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="JCDT_HOME/api/GP_211.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/cc_views/liskt_JCS_Maint/JCS1_CODE/JCDT/api/GP_211.zip!/GP_211"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="JCDT_HOME/api/BIO_11.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/cc_views/liskt_JCS_Maint/JCS1_CODE/JCDT/api/BIO_11.zip!/BIO_11"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="JCDT_HOME/api/ExtSystem_12.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/cc_views/liskt_JCS_Maint/JCS1_CODE/JCDT/api/ExtSystem_12.zip!/ExtSystem_12"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="JCDT_HOME/api/ExtCrypto_13.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/cc_views/liskt_JCS_Maint/JCS1_CODE/JCDT/api/ExtCrypto_13.zip!/ExtCrypto_13"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/GieseckeDevrient/JCSSuite3.0SP1/api/JC_221.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

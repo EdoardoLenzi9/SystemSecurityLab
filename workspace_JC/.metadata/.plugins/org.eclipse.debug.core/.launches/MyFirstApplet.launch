@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.gieseckedevrient.jcdt.ui.launching.JCardLaunchConfigurationType">
+<stringAttribute key="com.gieseckedevrient.jcdt.CARD_PROPERTIESTAB_AUTHENTIFICATION_TYPE" value="Automatic"/>
+<intAttribute key="com.gieseckedevrient.jcdt.CARD_PROPERTIESTAB_KEY_SET_INDEX" value="0"/>
+<intAttribute key="com.gieseckedevrient.jcdt.MAINTAB_APDU_PORT" value="2000"/>
+<booleanAttribute key="com.gieseckedevrient.jcdt.MAINTAB_CLEAR_CARD" value="true"/>
+<intAttribute key="com.gieseckedevrient.jcdt.MAINTAB_DEBUG_PORT" value="2800"/>
+<booleanAttribute key="com.gieseckedevrient.jcdt.MAINTAB_ENABLE_REVERSE_DEBUG" value="true"/>
+<stringAttribute key="com.gieseckedevrient.jcdt.MAINTAB_HOST_NAME" value="127.0.0.1"/>
+<intAttribute key="com.gieseckedevrient.jcdt.MAINTAB_NFC_PORT" value="5212"/>
+<stringAttribute key="com.gieseckedevrient.jcdt.MAINTAB_SIMULATION_NAME" value="Convego Join / SmartCafe Expert 5.0"/>
+<stringAttribute key="com.gieseckedevrient.jcdt.PACKAGE_UPLOADTAB_LAUNCH_PARAMETERS" value="&lt;JCLaunchParameters&gt;&lt;JCPackageLoadParameters&gt;&lt;DebugComponent&gt;true&lt;/DebugComponent&gt;&lt;Aid SpecificName=&quot;PackageAid&quot;&gt;31 32 33 34 33 AA FF CA FE FF AA&lt;/Aid&gt;&lt;DescriptorComponent&gt;true&lt;/DescriptorComponent&gt;&lt;Grayed&gt;false&lt;/Grayed&gt;&lt;Expanded&gt;true&lt;/Expanded&gt;&lt;LoadActive&gt;false&lt;/LoadActive&gt;&lt;External&gt;false&lt;/External&gt;&lt;JCAppletInstallParameters&gt;&lt;Aid SpecificName=&quot;AppletInstanceAid&quot;&gt;31 32 33 34 33 36&lt;/Aid&gt;&lt;Aid SpecificName=&quot;AppletClassAid&quot;&gt;31 32 33 34 33 36&lt;/Aid&gt;&lt;MakeSelectable&gt;true&lt;/MakeSelectable&gt;&lt;AppletInstanceName&gt;Instance&lt;/AppletInstanceName&gt;&lt;InstallActive&gt;false&lt;/InstallActive&gt;&lt;/JCAppletInstallParameters&gt;&lt;/JCPackageLoadParameters&gt;&lt;JCPackageLoadParameters&gt;&lt;DebugComponent&gt;true&lt;/DebugComponent&gt;&lt;Aid SpecificName=&quot;PackageAid&quot;&gt;31 32 33 34 32 AA FF CA FE FF AA&lt;/Aid&gt;&lt;DescriptorComponent&gt;true&lt;/DescriptorComponent&gt;&lt;Grayed&gt;false&lt;/Grayed&gt;&lt;Expanded&gt;true&lt;/Expanded&gt;&lt;LoadActive&gt;true&lt;/LoadActive&gt;&lt;External&gt;false&lt;/External&gt;&lt;JCAppletInstallParameters&gt;&lt;Aid SpecificName=&quot;AppletInstanceAid&quot;&gt;31 32 33 34 32 36&lt;/Aid&gt;&lt;Aid SpecificName=&quot;AppletClassAid&quot;&gt;31 32 33 34 32 36&lt;/Aid&gt;&lt;MakeSelectable&gt;true&lt;/MakeSelectable&gt;&lt;AppletInstanceName&gt;Instance&lt;/AppletInstanceName&gt;&lt;InstallActive&gt;true&lt;/InstallActive&gt;&lt;/JCAppletInstallParameters&gt;&lt;/JCPackageLoadParameters&gt;&lt;/JCLaunchParameters&gt;"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Java Card Applet Samples"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Java Card Applet Samples"/>
+</launchConfiguration>

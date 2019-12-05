@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SelectAppletTask Name="Select Secure Applet" Type="Applet">
+   <AppletInstanceAid>31 32 33 34 33 36</AppletInstanceAid>
+  </SelectAppletTask>
+  <SendApduTask Name="ENCR_VERIFY">
+   <Command>00 C0 00 00 08 3B DB 97 21 47 C9 89 40 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="READ_SIGNED">
+   <Command>00 B6 00 00 00</Command>
+   <Answer>
+    <Data>48 65 6C 6C 6F 20 57 6F 72 6C 64 E0 24 5A D1 5B B9 92 42</Data>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="READ_ENCRYPTED">
+   <Command>00 B7 00 00</Command>
+   <Answer>
+    <Data>B4 7F B4 9D E3 00 75 7B E0 24 5A D1 5B B9 92 42</Data>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+ </Tasks>
+</Macro>

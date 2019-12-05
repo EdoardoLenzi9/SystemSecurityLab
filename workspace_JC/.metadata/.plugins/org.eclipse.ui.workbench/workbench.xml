@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="20" version="2.0">
+<workbenchAdvisor/>
+<window height="1167" maximized="true" width="974" x="-7" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.gieseckedevrient.customizer.toolbar" itemType="typeToolBarContribution" x="525" y="22"/>
+<coolItem id="com.gieseckedevrient.customizer.toolbar.report" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.gieseckedevrient.customizer.toolbar.macro" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="com.gieseckedevrient.jcdt.ui.wizards.JavaCardElementCreationActionSet" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.gieseckedevrient.customizer.TaskFileFormEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Java Card">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyFirstApplet.java" partName="MyFirstApplet.java" path="H:/lab04/workspace_JC/Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java" title="MyFirstApplet.java" tooltip="Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="6526"/>
+</editor>
+<editor focus="true" id="com.gieseckedevrient.customizer.TaskFileFormEditor" name="MyFirst.macro" partName="MyFirst.macro" path="H:/lab04/workspace_JC/Java Card Applet Samples/macros/MyFirst.macro" title="MyFirst.macro" tooltip="Java Card Applet Samples/macros/MyFirst.macro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Card Applet Samples/macros/MyFirst.macro"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="MyFirst.macro" partName="MyFirst.macro" path="H:/lab04/workspace_JC/Java Card Applet Samples/macros/MyFirst.macro" title="MyFirst.macro" tooltip="Java Card Applet Samples/macros/MyFirst.macro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Card Applet Samples/macros/MyFirst.macro"/>
+<editorState selectionHPixel="0" selectionLength="30" selectionOffset="455"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Secure.macro" partName="Secure.macro" path="H:/lab04/workspace_JC/Java Card Applet Samples/macros/Secure.macro" title="Secure.macro" tooltip="Java Card Applet Samples/macros/Secure.macro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Card Applet Samples/macros/Secure.macro"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+</editor>
+<editor id="com.gieseckedevrient.customizer.TaskFileFormEditor" name="Secure.macro" partName="Secure.macro" path="H:/lab04/workspace_JC/Java Card Applet Samples/macros/Secure.macro" title="Secure.macro" tooltip="Java Card Applet Samples/macros/Secure.macro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Card Applet Samples/macros/Secure.macro"/>
+</editor>
+</editors>
+<views>
+<view id="com.gieseckedevrient.customizer.ui.views.CardContentView" partName="Card Content">
+<viewState/>
+</view>
+<view id="com.gieseckedevrient.jcdt.ui.views.bytecodeview.BytecodeView" partName="Bytecode"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" isWindowWorkingSet="false" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState columnWidth0="253" columnWidth1="78" columnWidth2="153" columnWidth3="63" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<columnOrder columnOrderIndex="0"/>
+<columnOrder columnOrderIndex="1"/>
+<columnOrder columnOrderIndex="2"/>
+<columnOrder columnOrderIndex="3"/>
+<columnOrder columnOrderIndex="4"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" isWindowWorkingSet="false" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="com.gieseckedevrient.customizer.ui.views.LogView" partName="Log">
+<viewState/>
+</view>
+<view id="com.gieseckedevrient.jcdt.ui.views.capfileview.CapfileView" partName="Cap File">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.gieseckedevrient.customizer.ui.views.LogView" activePerspective="com.gieseckedevrient.jcdt.ui.core.JCPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.gieseckedevrient.jcdt.ui.core.JCPerspective" id="com.gieseckedevrient.jcdt.ui.core.JCPerspective" label="Java Card"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.WorkingSetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="com.gieseckedevrient.jcdt.ui.wizards.JavaCardElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="com.gieseckedevrient.customizer.ui.views.CardContentView"/>
+<show_view_action id="com.gieseckedevrient.customizer.ui.views.MacroView"/>
+<show_view_action id="com.gieseckedevrient.customizer.ui.views.KeyFileView"/>
+<show_view_action id="com.gieseckedevrient.customizer.ui.views.LogView"/>
+<show_view_action id="com.gieseckedevrient.jcdt.ui.views.bytecodeview.BytecodeView"/>
+<show_view_action id="com.gieseckedevrient.jcdt.ui.views.capfileview.CapfileView"/>
+<show_view_action id="com.gieseckedevrient.coverage.views.CoverageView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.JavaSearchResultPage"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_in_time id="org.eclipse.jdt.ui.PackageExplorer" time="1575536308300"/>
+<new_wizard_action id="com.gieseckedevrient.jcdt.ui.wizards.NewJCProjectWizard"/>
+<new_wizard_action id="com.gieseckedevrient.jcdt.ui.wizards.NewJavaCardPackageWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.gieseckedevrient.jcdt.ui.wizards.NewJCAppletWizard"/>
+<new_wizard_action id="com.gieseckedevrient.jcdt.ui.wizards.NewMacroFileWizard"/>
+<perspective_action id="com.gieseckedevrient.jcdt.ui.core.JCDebugPerspective"/>
+<perspective_action id="com.gieseckedevrient.customizer.perspective"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.gieseckedevrient.jcdt.ui.views.capfileview.CapfileView"/>
+<view id="com.gieseckedevrient.customizer.ui.views.LogView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.gieseckedevrient.jcdt.ui.views.bytecodeview.BytecodeView"/>
+<view id="com.gieseckedevrient.customizer.ui.views.CardContentView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="leftTab">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@aad0b" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="leftTab">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.11052907" ratioLeft="211" ratioRight="1698" relationship="2" relative="leftTab"/>
+<info folder="true" part="bottomTab" ratio="0.6701422" ratioLeft="707" ratioRight="348" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.gieseckedevrient.customizer.ui.views.LogView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.gieseckedevrient.jcdt.ui.views.capfileview.CapfileView" label="Cap File"/>
+<page content="com.gieseckedevrient.customizer.ui.views.LogView" label="Log"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="rightTab" ratio="0.8508353" ratioLeft="713" ratioRight="125" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.gieseckedevrient.customizer.ui.views.CardContentView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.gieseckedevrient.jcdt.ui.views.bytecodeview.BytecodeView" label="Bytecode"/>
+<page content="com.gieseckedevrient.customizer.ui.views.CardContentView" label="Card Content"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.gieseckedevrient.customizer.TaskFileFormEditor" path="/Java Card Applet Samples/macros/MyFirst.macro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Java Card Applet Samples/macros/Secure.macro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Java Card Applet Samples/macros/MyFirst.macro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.gieseckedevrient.customizer.TaskFileFormEditor" path="/Java Card Applet Samples/macros/Secure.macro"/>
+</editors>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="61" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="61" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="1193" y="4"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="1193" y="4"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="1193" y="4"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="1193" y="4"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2615" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2233" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2233" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2233" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="408" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1">
+<position/>
+</item>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="3409" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2732" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="2732" y="0"/>
+</item>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="590" y="0"/>
+</item>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="6526" y="0"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1">
+<position/>
+</item>
+<item historyLabel="Secure.macro" index="2">
+<position/>
+</item>
+<item historyLabel="MyFirst.macro" index="3">
+<position info="not_deleted" x="455" y="30"/>
+</item>
+<item historyLabel="MyFirst.macro" index="1">
+<position/>
+</item>
+<item historyLabel="Secure.macro" index="2">
+<position/>
+</item>
+<item historyLabel="MyFirst.macro" index="1"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="6526" y="0"/>
+</item>
+<item historyLabel="Secure.macro" index="2">
+<position/>
+</item>
+<item historyLabel="Secure.macro" index="4"/>
+<item historyLabel="MyFirstApplet.java" index="0">
+<position info="not_deleted" x="6526" y="0"/>
+</item>
+<item active="true" historyLabel="MyFirst.macro" index="1">
+<position/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="com.gieseckedevrient.jcdt.ui.trim.status"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.gieseckedevrient.customizer.TaskFileFormEditor" name="Secure.macro" tooltip="Java Card Applet Samples/macros/Secure.macro">
+<persistable path="/Java Card Applet Samples/macros/Secure.macro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="MyFirst.macro" tooltip="Java Card Applet Samples/macros/MyFirst.macro">
+<persistable path="/Java Card Applet Samples/macros/MyFirst.macro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyFirstApplet.java" tooltip="Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java">
+<persistable path="/Java Card Applet Samples/src/com/gieseckedevrient/applets/myfirst/MyFirstApplet.java"/>
+</file>
+</mruList>
+</workbench>

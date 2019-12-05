@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ReportDialog">
+		<item value="C:\Program Files (x86)\GieseckeDevrient\JCSSuite3.0SP1\reports" key="Path"/>
+	</section>
+	<section name="LogFileDialog">
+		<item value="log.xml" key="File"/>
+		<item value="H:\lab04" key="Path"/>
+	</section>
+	<section name="MacroFileDialog">
+		<item value="C:\Program Files (x86)\GieseckeDevrient\JCSSuite3.0SP1\macros" key="Path"/>
+	</section>
+	<section name="KeyFileDialog">
+		<item value="C:\Program Files (x86)\GieseckeDevrient\JCSSuite3.0SP1\keyfiles" key="Path"/>
+	</section>
+</section>
