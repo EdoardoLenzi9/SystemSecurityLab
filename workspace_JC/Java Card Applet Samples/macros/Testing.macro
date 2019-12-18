@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SelectAppletTask Name="Select" Type="Applet">
+   <AppletInstanceAid>31 32 33 34 32 36</AppletInstanceAid>
+  </SelectAppletTask>
+  <SendApduTask Name="[PIN1] Verify (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 01 04 30 30 30 30 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Change Pin of another guy">
+   <Command>00 A6 00 02 04 31 31 31 31 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Change Pin (New PIN: 31 31 31 31)">
+   <Command>00 A6 00 01 04 31 31 31 31 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] AgeRestriction">
+   <Command>00 C6 00 00 08 31 36 31 32 32 30 31 38 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Credit">
+   <Command>00 E6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Debit">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Balance">
+   <Command>00 A7 00 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Modify">
+   <Command>00 D6 00 00 12 4B 6F 68 6E FF 44 6F 65 FF 31 36 31 32 31 39 39 36 FF 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN1] Read Data">
+   <Command>00 B6 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Verify (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 02 04 30 30 30 30 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Change Pin (New PIN: 32 32 32 32)">
+   <Command>00 A6 00 02 04 32 32 32 32 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] AgeRestriction">
+   <Command>00 C6 00 00 08 31 36 31 32 32 30 31 38 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Credit (forbidden until wallet is enabled)">
+   <Command>00 E6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Debit">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Balance">
+   <Command>00 A7 00 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Modify">
+   <Command>00 D6 00 00 12 4B 6F 68 6E FF 44 6F 65 FF 31 36 31 32 31 39 39 36 FF 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Read Data">
+   <Command>00 B6 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Verify (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 03 04 30 30 30 30 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Change Pin (New PIN: 33 33 33 33)">
+   <Command>00 A6 00 03 04 33 33 33 33 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] AgeRestriction">
+   <Command>00 C6 00 00 08 31 36 31 32 32 30 31 38 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Credit">
+   <Command>00 E6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Debit (on a 0 amount)">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 84</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Balance">
+   <Command>00 A7 00 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Modify">
+   <Command>00 D6 00 00 12 4B 6F 68 6E FF 44 6F 65 FF 31 36 31 32 31 39 39 36 FF 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Read Data">
+   <Command>00 B6 00 00</Command>
+   <Answer>
+    <Sw>69 82</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Verify (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 02 04 30 30 30 30 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN2] Credit">
+   <Command>00 E6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Verify (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 03 04 30 30 30 30 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Debit">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="[PIN3] Debit (more than allowed)">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>69 84</Sw>
+   </Answer>
+  </SendApduTask>
+ </Tasks>
+</Macro>

@@ -5,8 +5,8 @@
   <SelectAppletTask Name="Select MyFirst" Type="Applet">
    <AppletInstanceAid>31 32 33 34 32 36</AppletInstanceAid>
   </SelectAppletTask>
-  <SendApduTask Name="Verify Pin (Modify PIN: 31 31 31 31)">
-   <Command>00 20 00 00 04 00 00 00 00 00</Command>
+  <SendApduTask Name="Verify Pin (Default PIN: 30 30 30 30)">
+   <Command>00 20 00 03 04 00 00 00 00 00</Command>
    <CommandCallback>
     <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
    </CommandCallback>
@@ -14,8 +14,41 @@
     <Sw>90 00</Sw>
    </Answer>
   </SendApduTask>
+  <SendApduTask Name="Change Pin (Default PIN: 30 30 30 30)">
+   <Command>00 A6 00 03 04 00 00 00 00 00</Command>
+   <CommandCallback>
+    <HexParameter InitializeDefault="false" Length="4" Name="PIN for Modifying (31 31 31 31)" Offset="0"/>
+   </CommandCallback>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="AgeRestriction">
+   <Command>00 C6 00 00 08 31 36 31 32 32 30 31 38 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="Credit">
+   <Command>00 E6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="Debit">
+   <Command>00 F6 00 00 02 31 34 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
+  <SendApduTask Name="Balance">
+   <Command>00 A7 00 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+  </SendApduTask>
   <SendApduTask Name="Modify">
-   <Command>00 D6 00 00 1F 4B 6F 68 6E FF 44 6F 65 FF 32 31 31 32 32 30 30 31 FF 31 36 32 31 31 32 30 31 53 78 78 78 FF 00</Command>
+   <Command>00 D6 00 00 12 4B 6F 68 6E FF 44 6F 65 FF 31 36 31 32 31 39 39 36 FF 00</Command>
    <Answer>
     <Sw>90 00</Sw>
    </Answer>
