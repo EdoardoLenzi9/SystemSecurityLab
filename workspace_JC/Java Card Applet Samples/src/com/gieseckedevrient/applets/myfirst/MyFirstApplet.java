@@ -81,10 +81,26 @@ public class MyFirstApplet extends Applet {
 	    	  	balanceMode(apdu);
 	    	 	break;
 	    	 	
+	      	case Settings.INS_STATUS:		// show session status, return the current user role (0 if undefined)
+	    	  	statusMode(apdu);
+	    	 	break;
+	    	 	
    			default:						// unknown command
    				ISOException.throwIt(ISO7816.SW_INS_NOT_SUPPORTED); // Exception: 0x6E00
       	}
     }
+   	
+   	
+   	private void statusMode(APDU apdu){
+   		short role = session.getRole();
+   		
+   		byte[] reply = new byte[1];
+   		reply[0] = (byte) role;
+   		    
+     	apdu.setOutgoing();
+     	apdu.setOutgoingLength((short) 80);
+     	apdu.sendBytesLong(reply, (short) 0, (short) 1);
+   	}
    	
    	  	
    	private void verifyMode(byte[] buffer, byte length){

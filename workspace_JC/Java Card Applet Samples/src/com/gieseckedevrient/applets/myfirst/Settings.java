@@ -16,6 +16,7 @@ public class Settings {
    	public final static byte INS_CREDIT = (byte) 0xE6;
    	public final static byte INS_DEBIT = (byte) 0xF6;
    	public final static byte INS_BALANCE = (byte) 0xA7;
+   	public final static byte INS_STATUS = (byte) 0xB7;
 
     public final static byte P2_PIN1 = (byte) 0x01;
    	public final static byte P2_PIN2 = (byte) 0x02;

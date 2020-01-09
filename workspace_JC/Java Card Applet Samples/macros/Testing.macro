@@ -212,5 +212,11 @@
     <Sw>69 84</Sw>
    </Answer>
   </SendApduTask>
+  <SendApduTask Name="Check Status">
+   <Command>00 B7 00 00 00</Command>
+   <Answer>
+    <Sw>90 00</Sw>
+   </Answer>
+ </SendApduTask>
  </Tasks>
 </Macro>
