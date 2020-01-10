@@ -1,0 +1,8 @@
+com/example/verifier/BidirectionalVerifier.class
+com/example/verifier/Verifier.class
+com/example/verifier/Validator.class
+com/example/verifier/Scanner.class
+com/example/verifier/UnidirectionalVerifier.class
+com/example/verifier/Generator.class
+com/example/verifier/OfflineVerifier.class
+com/example/verifier/PinParameters.class
