@@ -1,4 +1,4 @@
-#Fri Jan 10 11:17:48 CET 2020
+#Fri Jan 10 13:11:45 CET 2020
 base.0=/home/eddy/Note/Klagenfurt/System Security Lab/SystemSecurityLab/HelloAndroid/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

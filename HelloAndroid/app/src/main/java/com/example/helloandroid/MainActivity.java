@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -21,8 +22,7 @@ import javax.crypto.NoSuchPaddingException;
 public class MainActivity extends AppCompatActivity {
 
     private Button generateBtn;
-    private TextView pinField;
-    private TextView timeField;
+    private TextView messageField;
     private EditText uidField;
     private EditText lengthField;
     private EditText validityField;
@@ -37,14 +37,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         generateBtn = (Button)findViewById(R.id.generate);
-        pinField = (TextView)findViewById(R.id.pin);
-        timeField = (TextView)findViewById(R.id.time);
+        messageField = (TextView)findViewById(R.id.message);
         uidField = (EditText)findViewById(R.id.uid);
         lengthField = (EditText)findViewById(R.id.lenght);
         validityField = (EditText)findViewById(R.id.validity);
         modeField = (EditText)findViewById(R.id.mode);
-        pinField.setText("<PIN>");
-        timeField.setText("<TIME>");
+
+        messageField.setText("Fill the fields!");
     }
 
 
@@ -64,36 +63,65 @@ public class MainActivity extends AppCompatActivity {
 
     public void offlineMode() throws Exception {
 
-        int uid = Integer.parseInt(uidField.getText().toString());
-        int length = Integer.parseInt(lengthField.getText().toString());
-        int validity = Integer.parseInt(validityField.getText().toString());
-
-        Generator generator = new Generator(uid, length, validity);
-
+        Generator generator = new Generator(readParameters());
         long time = System.currentTimeMillis() / 1000;
         String pin = generator.generate(time);
 
-        pinField.setText(pin);
-        timeField.setText(time + "");
+        messageField.setText(pin);
     }
 
 
-    public void unidirectionalMode(){
+    private PinParameters readParameters() throws Exception {
+        int uid = Integer.parseInt(uidField.getText().toString());
+        int length = Integer.parseInt(lengthField.getText().toString());
+        int validity = Integer.parseInt(validityField.getText().toString());
+        return new PinParameters(uid, length, validity);
+    }
+
+
+    public void unidirectionalMode() throws Exception {
+        messageField.setText("Waiting for server response...");
         new Thread() {
             @Override
             public void run() {
                 try {
+                    PinParameters parameters = readParameters();
+                    Generator generator = new Generator(parameters);
+                    long time = System.currentTimeMillis() / 1000;
+                    String pin = generator.generate(time);
+
+                    PinDto dto = new PinDto(parameters, pin);
+
                     // Create Socket instance
                     Socket socket = new Socket(HOST, PORT);
-                    // Get input buffer
-                    BufferedReader br = new BufferedReader(
-                            new InputStreamReader(socket.getInputStream()));
-                    String line = br.readLine();
-                    br.close();
-                    System.out.println(line);
+
+                    ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
+                    oos.writeObject(dto);
+
+                    ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+
+                    String message = (String) ois.readObject();
+                    messageField.setText(message);
+
+                    ois.close();
+                    oos.close();
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                } catch (NoSuchAlgorithmException e) {
+                    e.printStackTrace();
+                } catch (InvalidKeyException e) {
+                    e.printStackTrace();
+                } catch (NoSuchPaddingException e) {
+                    e.printStackTrace();
+                } catch (BadPaddingException e) {
+                    e.printStackTrace();
+                } catch (IllegalBlockSizeException e) {
+                    e.printStackTrace();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

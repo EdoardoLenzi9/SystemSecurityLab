@@ -24,7 +24,7 @@ public class Generator {
 
     public Generator(PinParameters params) throws Exception{
         this.parameters = params;
-    }
+    }fil
 
     public String generate(long time) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException{
@@ -38,8 +38,13 @@ public class Generator {
         Cipher aes = Cipher.getInstance(aesCypher);
         SecretKeySpec aesKey = new SecretKeySpec(key, "AES");
         aes.init(Cipher.ENCRYPT_MODE, aesKey);
-
+        
         byte[] encrypted = aes.doFinal(secret);
+        
+        Cipher aes2 = Cipher.getInstance(aesCypher);
+        aes2.init(Cipher.DECRYPT_MODE, aesKey);
+        byte[] decoded = aes2.doFinal(encrypted);
+        
         String pin = new String(toReadableString(encrypted));
         return pin;
     }

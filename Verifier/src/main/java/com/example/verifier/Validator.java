@@ -1,9 +1,16 @@
 package com.example.verifier;
 
+import com.example.helloandroid.PinDto;
+
 public class Validator {
     
     public Validator(){}
         
+    
+    public static boolean validate(PinDto dto) throws Exception{  
+        return validate(dto.pin, new PinParameters(dto.uid, dto.length, dto.validity));
+    }  
+    
     public static boolean validate(String pin, PinParameters params) throws Exception{    
         
         long timestamp = System.currentTimeMillis() / 1000;

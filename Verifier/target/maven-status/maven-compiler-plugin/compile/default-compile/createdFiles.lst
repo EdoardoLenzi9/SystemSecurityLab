@@ -1,7 +1,9 @@
 com/example/verifier/BidirectionalVerifier.class
+com/example/helloandroid/PinParameters.class
 com/example/verifier/Verifier.class
 com/example/verifier/Validator.class
 com/example/verifier/Scanner.class
+com/example/helloandroid/PinDto.class
 com/example/verifier/UnidirectionalVerifier.class
 com/example/verifier/Generator.class
 com/example/verifier/OfflineVerifier.class

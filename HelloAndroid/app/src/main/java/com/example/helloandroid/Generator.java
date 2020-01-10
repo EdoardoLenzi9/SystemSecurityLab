@@ -15,36 +15,29 @@ import javax.crypto.spec.SecretKeySpec;
 import static java.lang.Math.abs;
 
 public class Generator {
-    private int uid;
-    private int length;
-    private int validity;
+    private PinParameters parameters;
 
     private final byte[] key = fromHexString("00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15");
     // private final String aesCypher = "AES/CBC/PKCS5Padding";
     private final String aesCypher = "AES/ECB/PKCS5Padding";
 
 
-    public Generator(int u, int l, int v) throws Exception{
-        checkRange(u, 0, 255);
-        checkRange(l, 1, 16);
-        checkRange(v, 1, 60);
-        this.uid = u;
-        this.length = l;
-        this.validity = v;
+    public Generator(PinParameters params) throws Exception{
+        this.parameters = params;
     }
 
     public String generate(long time) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException{
 
-        byte[] secret = join(new ArrayList<>( Arrays.asList( toBytes(uid),
-                toBytes(length),
-                toBytes(validity),
+        byte[] secret = join(new ArrayList<>( Arrays.asList( toBytes(parameters.uid),
+                toBytes(parameters.length),
+                toBytes(parameters.validity),
                 toBytes(time)
                 /* PAD */ )));
 
         Cipher aes = Cipher.getInstance(aesCypher);
         SecretKeySpec aesKey = new SecretKeySpec(key, "AES");
-        aes.init(Cipher.ENCRYPT_MODE, aesKey/*, null*/);
+        aes.init(Cipher.ENCRYPT_MODE, aesKey);
 
         byte[] encrypted = aes.doFinal(secret);
         String pin = new String(toReadableString(encrypted));
@@ -58,15 +51,7 @@ public class Generator {
             tmp = tmp + 48;
             pin[i] = (byte)tmp;
         }
-        return Arrays.copyOfRange(pin, pin.length - length, pin.length);
-    }
-
-    private void checkRange(int v, int lowerBound, int upperBound) throws Exception{
-        if(v < lowerBound){
-            throw new Exception(v + " under the lowerBound " + lowerBound);
-        } else if(v > upperBound){
-            throw new Exception(v + " under the upperBound " + upperBound );
-        }
+        return Arrays.copyOfRange(pin, pin.length - parameters.length, pin.length);
     }
 
     private static byte[] toBytes(long x) {
@@ -93,7 +78,7 @@ public class Generator {
         for(int i = 0; i < items.size(); i++){
             byte[] next = items.get(i);
             byte[] tmp = new byte[result.length + next.length];
-            System.arraycopy(result,0,tmp,0         ,result.length);
+            System.arraycopy(result,0,tmp,0,result.length);
             System.arraycopy(next,0,tmp,result.length,next.length);
 
             result = tmp;
